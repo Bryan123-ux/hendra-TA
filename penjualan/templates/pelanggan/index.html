@@ -1,0 +1,120 @@
+{% extends 'pelanggan/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .hero-section {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .hero-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        z-index: 1;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section text-white d-flex align-items-center justify-content-center">
+    <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62"
+         class="hero-img" alt="Banner">
+    <div class="hero-content text-center px-3">
+        <h1 class="display-4 fw-bold">UD. Barokah Jaya Beton</h1>
+        <p class="lead">Solusi terpercaya untuk kebutuhan bahan bangunan Anda</p>
+    </div>
+</section>
+
+
+
+<!-- Keunggulan -->
+<section class="py-5 bg-white text-center">
+    <div class="container">
+        <h2 class="text-success mb-4">Kenapa Memilih Kami?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-certificate fa-3x text-success mb-3"></i>
+                <h5>Kualitas Terjamin</h5>
+                <p>Produk dengan standar mutu tinggi langsung dari produsen terpercaya.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-shipping-fast fa-3x text-success mb-3"></i>
+                <h5>Pengiriman Cepat</h5>
+                <p>Layanan antar cepat dan tepat waktu ke seluruh area lokal.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-hand-holding-usd fa-3x text-success mb-3"></i>
+                <h5>Harga Bersaing</h5>
+                <p>Harga transparan dan kompetitif untuk semua kalangan proyek.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Produk Unggulan -->
+<section class="py-5 bg-light text-center">
+    <div class="container">
+        <h2 class="text-success mb-4">Produk Unggulan</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" class="img-fluid rounded shadow-sm" alt="Produk 1">
+                <h5 class="mt-2">Batu Tempel Gaya 1</h5>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" class="img-fluid rounded shadow-sm" alt="Produk 2">
+                <h5 class="mt-2">Paving Block Abu</h5>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" class="img-fluid rounded shadow-sm" alt="Produk 3">
+                <h5 class="mt-2">Roster Beton</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimoni -->
+<section class="py-5 bg-white text-center">
+    <div class="container">
+        <h2 class="text-success mb-4">Apa Kata Pelanggan Kami?</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p class="mb-0">"Pelayanannya cepat dan barangnya berkualitas!"</p>
+                    <footer class="blockquote-footer">Bapak Anto, Kontraktor</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p class="mb-0">"Suka banget sama batu tempelnya, estetik banget buat dinding luar rumah."</p>
+                    <footer class="blockquote-footer">Ibu Sari, Pemilik Rumah</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Kontak -->
+<section class="py-5 bg-light text-center border-top border-success">
+    <div class="container">
+        <h2 class="text-success mb-4">Hubungi Kami</h2>
+        <p><i class="fas fa-phone-alt text-success"></i> 0812-3456-7890</p>
+        <p><i class="fas fa-envelope text-success"></i> udbarokahbeton@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt text-success"></i> Jl. Raya Beton No. 123, Surabaya</p>
+    </div>
+</section>
+
+{% endblock %}
